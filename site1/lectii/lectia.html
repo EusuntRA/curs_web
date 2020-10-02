@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="/image/ico" href="../_img/icon.ico">
+  <title>Lectia 6: Tabele HTML , Crearea Galeriei</title>
+  <link rel="stylesheet" type="text/css" href="../_css/style.css">
+  <link rel="stylesheet" type="text/css" href="../_css/lectii.css">
+  <link href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</head>
+
+<body class="body">
+  <header>
+    <div class="headerL"></div>
+    <div class="headerR">
+      <H1>pagina mea</H1>
+    </div>
+  </header>
+
+  <main>
+    <div id="menu">
+      <div id="horizontal">
+        <a href="../home"><i class="fas fa-home"></i>Acasă</a>
+        <a href="/lectii">Lectii</a>
+        <a href="../teme">Teme pe acasă</a>
+        <a href="../about">Despre noi</a>
+        <a href="../contact">Contacte</a>
+        <div class="animatiemh horizontal2"></div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <audio controls><source src="../_audio/soundtrack.mp3" type="audio/mpeg"></audio>
+      <div class="autentificare">
+        <h2 style="margin-bottom: 1px;">Autentificare</h2>
+        <form>
+          <label></label><input type="text" name="nickname" style="width: 210px" id="foo"><div class="br2"></div>
+          <label></label><input type="password" name="pass" style="width: 210px"><div class="br1"></div>
+          <input type="checkbox" name="retine"><label for="retine">ține-mă minte</label><div class="br1"></div>
+          <input type="submit" name="Intră" class="btn" style="width: 100%" value="Autentifică-te"><div class="br1"></div>
+          <center><a href="">ai uitat parola</a> | <a href="../inregistrare">înregistrează-te</a></center>
+        </form>
+      </div>
+      <script type="text/javascript" src="../frag/meniu.js"></script>
+    </div>
+
+    <div id="content">
+      <div class="tab">
+        <button onclick="openCity(event, 'ep1')" class="tbtn active">Video</button>
+        <button onclick="openCity(event, 'ep2')" class="tbtn">Animatia CSS</button>
+        <button onclick="openCity(event, 'ep3')" class="tbtn">Tabele</button>
+        <button onclick="openCity(event, 'ep4')" class="tbtn">Galeria + nota</button>
+      </div>
+      <div class="tabcontent">
+        <div id="ep1" class="tabul">
+          <iframe width="735" height="413" src="https://www.youtube.com/embed/323CBIs48Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="ep2" class="tabul" style="display:none"><p class="codepen" data-height="606" data-theme-id="1" data-slug-hash="poyjwLw"></p></div>
+
+        <div id="ep3" class="tabul" style="display:none"><p class="codepen" data-height="526" data-theme-id="1"data-slug-hash="QWNjgrd"></p></div>
+
+        <div id="ep4" class="tabul" style="display:none"><p class="codepen" data-height="755" data-theme-id="1" data-slug-hash="YzqyQvo"></p></div>
+      </div>
+<script>
+openCity(event, "ep1")
+function openCity(evt, cityName) {
+    var i, tabul, tbtn;
+    tabul = document.getElementsByClassName("tabul");
+    for (i = 0; i < tabul.length; i++) {
+        tabul[i].style.display = "none";
+    }
+    tbtn = document.getElementsByClassName("tbtn");
+    for (i = 0; i < tabul.length; i++) {
+        tbtn[i].classList.remove("active");
+    }
+    document.getElementById(cityName).style.display = "block";
+    if (evt) {evt.currentTarget.classList.add("active");}
+}
+var mybtn = document.getElementsByClassName("tbtn")[0];
+mybtn.click();
+</script>      
+    </div>
+    <div class="clear"></div>
+  </main>
+  <footer>
+    <script type="text/javascript" src="../frag/footer.js"></script>
+  </footer>
+</body>
+</html>

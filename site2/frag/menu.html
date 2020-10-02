@@ -1,0 +1,167 @@
+    <div class="container-fluid bg-dark">
+        <div class="container head1 ">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 d-flex justify-content-start">
+                    <a href="https://www.facebook.com/" target="_blanck" title="facebook"><i class="fab fa-facebook" style="color: #1975ED"></i></a>
+                    <a href="https://www.instagram.com/" target="_blanck" title="instagram"><i class="fab fa-instagram ml-3"></i></a>
+                    <a href="https://twitter.com/" target="_blanck" title="twitter"><i class="fab fa-twitter ml-3" style="color: #1C9DEB"></i></a>
+                    <a href="https://www.youtube.com/" target="_blanck" title="youtube"><i class="fab fa-youtube ml-3" style="color: red;"></i></a>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex justify-content-end font-weight-bold text-white">
+                    <a class="font-weight-bold mr-2 text-white" data-toggle="modal" data-target="#logare" style="cursor: pointer">Logare</a> / 
+                    <a class="font-weight-bold ml-2 mr-2 text-white" data-toggle="modal" data-target="#inregistrare" style="cursor: pointer">Înregistrare</a>
+                      <!-- FEREASTRA MODALA Logare / Înregistrare -->
+                      <!-- Logare -->
+                    <div class="modal fade" id="logare" tabindex="-1">
+                        <div  class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-dark">
+                                <div class="modal-header"><h2>Autentificare</h2>
+                                    <button class="btn btn-danger" data-dismiss="modal">X</button>
+                                </div>
+                                <div class="modal-body">
+                                     <form action="/login.js">
+                                        <div class="input-group">
+                                            <label for="nick"></label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i class="far fa-at"></i></span>
+                                            </div>
+                                            <input type="text" name="nick" class="form-control" placeholder="Introduceti Nickname" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mt-3">
+                                            <label for="pass"></label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon2"><i class="far fa-lock-alt"></i></span>
+                                            </div>
+                                            <input type="password" name="pass" class="form-control" placeholder="Introduceti parola" aria-describedby="basic-addon2">
+                                        </div>
+                                        <div class="custom-control custom-checkbox mt-3">
+                                            <input type="checkbox" id="remember" class="custom-control-input" name="remember">
+                                            <label for="remember" class="custom-control-label">Tine-mă minte</label>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <button class="btn btn-success pl-5 pr-5" type="submit" data-dismiss="modal">Intră</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- END -->
+                      <!-- Înregistrare -->
+                    <div class="modal fade" id="inregistrare" tabindex="-1">
+                        <div  class="modal-dialog modal-dialog-centered  modal-lg">
+                            <div class="modal-content text-dark">
+                                <div class="modal-header"><h2>Înregistrare</h2>
+                                    <button class="btn btn-danger" data-dismiss="modal">X</button>
+                                </div>
+                                <div class="modal-body">
+                                     <form action="/register.js">
+                                        <div class="form-row mb-3">
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="nume"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1">Nume</span>
+                                                    </div>
+                                                    <input type="text" name="nume" class="form-control" placeholder="Introduceti Nume" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="prenume"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2">Prenume</span>
+                                                    </div>
+                                                    <input type="text" name="prenume" class="form-control" placeholder="Introduceti Prenume" aria-describedby="basic-addon2">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="masculin" name="masculin" class="custom-control-input">
+                                            <label class="custom-control-label" for="masculin">masculin</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="femenin" name="masculin" class="custom-control-input">
+                                            <label class="custom-control-label" for="femenin">femenin</label>
+                                        </div>
+                                        
+
+                                        <div class="form-row mt-3">
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="nick"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1">Nick</span>
+                                                    </div>
+                                                    <input type="text" name="nick" class="form-control" placeholder="Introduceti nickname" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Alege avatar</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-3">
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="password"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2">Pass</span>
+                                                    </div>
+                                                    <input type="password" name="password" class="form-control" placeholder="Introduceti parolă" aria-describedby="basic-addon2">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="password"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2"> Confirm Pass</span>
+                                                    </div>
+                                                    <input type="password" name="password" class="form-control" placeholder="Confirmați parola" aria-describedby="basic-addon2">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-3">
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="mail"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2">Email</span>
+                                                    </div>
+                                                    <input type="mail" name="mail" class="form-control" placeholder="Introduceti email" aria-describedby="basic-addon2">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    <label for="tel"></label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2">telefon</span>
+                                                    </div>
+                                                    <input type="tel" name="tel" class="form-control" placeholder="5954 54 413" aria-describedby="basic-addon2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mt-3">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Abonează-te la newsletter</label>
+                                        </div>
+                                        
+
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <button class="btn btn-success pl-5 pr-5" type="submit" data-dismiss="modal">Înregistrează-te</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- END -->
+                </div>
+            </div>
+        </div>
+    </div>

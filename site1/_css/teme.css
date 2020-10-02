@@ -1,0 +1,83 @@
+
+
+.temabox{padding-top: 1px;
+         padding-bottom: 1px;
+         padding-left: 5px;
+         margin-bottom: 10px;
+         margin-right: 15px;
+         border-left: 6px solid #009ada;
+         background-color: #e4e4e4;}
+
+
+.temabox1 {padding-top: 1px;
+           padding-bottom: 1px;
+           padding-right: 5px;
+           margin-bottom: 10px;
+           margin-right: 15px;
+           border-right: 6px solid #009ada;
+           background-color: #e4e4e4;
+           text-align: right;}
+
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tbtn {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tbtn:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tbtn.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  width: 100%;
+  border: 1px solid #ccc;
+
+}
+.tab a {text-decoration: none;color: black}
+.tab a:hover {text-decoration: none;}
+.tab a:active {text-decoration: none;}
+
+article h1 {font-size: 20px;}
+
+
+.btn {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color:#33bdef;
+  border-radius:6px;
+  border:1px solid #057fd0;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:11px 24px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #5b6178;
+}
+.btn:hover {
+  background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color:#019ad2;
+}

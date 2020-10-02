@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+ <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                });
+            });
+        </script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+    new WOW().init();
+</script>
+
+
+    
+    <link rel="stylesheet" type="text/css" href="_css/styles.css">
+    <link href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    <title>Pagina de student</title>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177634397-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177634397-1');
+</script>
+<body>
+
+
+    <!--
+Bloc Articole
+slider
+galerie
+ferestre modal -->
+ <script type="text/javascript" src="frag/menu.js"></script>
+
+    <div class="container-fluid bgheadfoot meniul">
+        <div class="container">
+
+
+
+            <nav class="navbar navbar-expand-md navbar-dark p-0">
+                <a class="navbar-brand p-0" href="/"><img src="../_img/logo.png"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto ulul">
+                        <li class="nav-item active item_li"><a class="nav-link itema text-uppercase" href="/">Acasă</a></li>
+                        <li class="nav-item item_li"><a class="nav-link itema text-uppercase" href="/articole">Articole</a></li>
+
+                         <li class="nav-item item_li dropdown"><a class="nav-link itema text-uppercase" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curs</a>
+                            <div class="dropdown-menu p-0 m-0 bgheadfoot" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item text-uppercase text-white " href="/curs/lectii">Lectii</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="/curs/teme">Teme pe acasă</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="/curs/examenul" target="_blanck">Examen</a>
+                            </div>
+                        </li>
+                        <li class="nav-item item_li dropdown"><a class="nav-link itema text-uppercase" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resurse</a>
+                            <div class="dropdown-menu p-0 m-0 bgheadfoot" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item text-uppercase text-white " href="https://cp.beget.com/main" target="_blanck">Control Panel</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://fontawesome.com/icons?d=gallery" target="_blanck">Font Icon</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://codepen.io/arty2game" target="_blanck">Code Pen</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://www.bestcssbuttongenerator.com/" target="_blanck">Generator butoane</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://cssgradient.io/" target="_blanck">CSS gradient</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://www.w3schools.com/howto/default.asp" target="_blanck">w3schools</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://beautifier.io/" target="_blanck">Aranjare cod</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://www.rexegg.com/regex-quickstart.html" target="_blanck">Restrictii input</a>
+                                <div class="menuhr"></div>
+                                <a class="dropdown-item text-uppercase text-white" href="https://css-tricks.com/" target="_blanck">css-tricks</a>
+                            </div>
+                        </li>
+                        <li class="nav-item item_li"><a class="nav-link itema text-uppercase" href="/contact">Contactați-mă</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+<script src="../_js/script.js"></script>
+<!-- Slider-->
+ <script type="text/javascript" src="frag/slider.js"></script>
+
+<!--  Ultimele Articole  -->
+<div class="container-fluid">
+    <div class="container">
+        <h1 class="text-center pt-5 mb-0">Ultimele Articole</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mt-5">
+                <div class="card border-0">
+                    <img class="card-img-top img-fluid rounded-25" src="_img/strategii-pentru-dezvoltare-web.jpg">
+                        <div class="card-header text-center pb-0"><h2>Elemente cheie</h2></div>
+                    <div class="card-body text-center pt-0">
+                        <p class="card-text">Sunt multe lucruri care trebuie avute in vedere atunci cand se construieste un site, insa cu siguranta sase dintre acestea trebuie aplicate cu strictete atunci cand se decide structura afacerii tale pe Internet:
+                        </p>
+                        <a href="/articole/elemente-cheie-pentru-o-dezvoltare-web-de-succes.html" class="btn btn-m btn-lg"> Citește</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 float-center mt-5">
+                <div class="card border-0">
+                    <img class="card-img-top img-fluid rounded-25" src="_img/cms.png">
+                        <div class="card-header text-center pb-0"><h2>Ce este un CMS?</h2></div>
+                    <div class="card-body text-center pt-0">
+                        <p class="card-text">Un sistem de administrare (management) al conținutului, sau pe scurt CMS, este o aplicație special construită pentru a ajuta la crearea, editarea, organizarea și publicarea de conținut online.
+                        </p>
+                        <a href="/articole/ce-este-un-cms.html" class="btn btn-m btn-lg"> Citește</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 float-center mt-5">
+                <div class="card border-0">
+                    <img class="card-img-top img-fluid rounded-25" src="_img/delete_element.jpg">
+                        <div class="card-header text-center pb-0"><h2>Elemente care trebuie inlaturate</h2></div>
+                    <div class="card-body text-center pt-0">
+                        <p class="card-text">In realizarea unui site de prezentare, expertul IT ofera consiliere cu privire la caracteristicile pe care respectivul site trebuie sa le intruneasca.
+                        </p>
+                        <a href="/articole/inlatura_elementele_pentru_un_site_mai_bun.html" class="btn btn-m btn-lg"> Citește</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bgaltcontainer d-flex justify-content-center">
+    <div class="container">
+        <h1 class="text-center pt-5 mb-0">Ultimele Lecții</h1>
+        <div class="row">
+
+            <div class="col-12 col-xl-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie">
+                    <a href="/curs/lectii/lectia10.html">
+                        <img src="_img/lectii/lectia_10.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0 "><h4>Lectia 10:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Breadcrumbs, paginarea și cardurile</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie">
+                    <a href="/curs/lectii/lectia9.html">
+                        <img src="_img/lectii/lectia_9.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0"><h4>Lectia 9:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Ferestre modale, taburile și slider-ul.</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie">
+                    <a href="/curs/lectii/lectia8.html">
+                        <img src="_img/lectii/lectia_8.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0"><h4>Lectia 8:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Formulare, tabele și alte elemente bootsrtap</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center">Teme pe acasă</h1>
+        <div class="row">
+
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie">
+                    <a href="/curs/teme/tema7.html">
+                        <img src="_img/lectii/tema_7.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0"><h4>Tema 7:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Realizarea unei pagini prin bootstrap după model</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie">
+                    <a href="/curs/teme/tema6.html">
+                        <img src="_img/lectii/tema_6.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0"><h4>Tema 6:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Realizarea unei pagini prin bootstrap după model</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <div class="card bg-transparent position-relative mb-5 card-lectie border-0">
+                    <a href="/curs/teme/tema5.html">
+                        <img src="_img/lectii/tema_5c.png" class="img-fluid position-absolute">
+                        <img src="_img/layer2_bg2.png" class="img-fluid position-absolute">
+                        <div class=" d-flex justify-content-end">
+                            <div class="position-absolute text-white w-50" >
+                                <div class="card-header pt-1 pb-0 pl-5 border-0"><h4>Tema 5:</h4></div>
+                                <div class="card-body pt-0 pl-2"><h2 class="h5">Pagina about cu 3 animații</h2></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="container">
+            <h1 class="text-center pt-5 mb-5">Ceva text de frumusață</h1>
+            <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ab asperiores et tempora explicabo voluptatum. Facilis consequuntur debitis laudantium, cum pariatur. Velit quas voluptates labore quo, repellendus, dignissimos pariatur nihil sint dolorem, atque ab eius dolores architecto voluptate sit ut eum aliquam ex dolorum eveniet reprehenderit debitis molestiae animi sapiente?</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis mollitia, voluptate ipsam expedita consequatur cupiditate quasi maiores velit temporibus laborum.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae facilis optio voluptas suscipit harum culpa ipsum natus ullam rem accusantium, aut nulla corporis laudantium esse eius, in! Ut pariatur expedita illo voluptatum voluptate accusantium dolor ab ea laudantium perspiciatis odio, voluptates nostrum. Voluptatibus aliquid mollitia libero vero exercitationem consequuntur ratione neque, eius doloremque nobis earum facere, beatae velit! Cum repellat saepe, harum voluptatum, provident, ullam libero obcaecati voluptatem cupiditate architecto asperiores distinctio dignissimos soluta porro. Ratione dolore, delectus voluptatum blanditiis.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ullam et accusamus doloribus, adipisci in! Voluptates consequatur iure tenetur mollitia, voluptatem quasi atque magnam necessitatibus cumque perferendis sequi eos, ullam earum a voluptatum enim delectus adipisci dolor maiores. Aliquid, ratione.</p>
+             </section>
+        </div>
+    </div>
+
+    <div class="container-fluid bgservicii d-flex justify-content-center">
+        <div class="container">
+            <h1 class="text-center pt-5 mb-5">Serviciile noastre</h1>
+            <div class="row">
+                <!--  -->
+                <div class="col-12 col-md-4">
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="col-12 col-md-4">
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--  -->
+                <div class="col-12 col-md-4">
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+                    <div class="servicii_box mb-3 pb-2">
+                        <div class="servicii_header pt-3 pb-2 pl-5">Lorem ipsum dolor sit amet.</div>
+                        <div class="servicii_content pt-3 pl-3 pr-2 pb-3">
+                            <div class="servicii_hr"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolorum, natus! Unde error, quam, laboriosam minima quo quisquam voluptatem maxime.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid d-flex justify-content-center">
+    <div class="container">
+        <div class="parteneri">
+        <h1 class="text-center pt-5 mb-5">Partereri</h1>
+        <ul class="menupos">
+            <li id="part1" class=""></li> <!-- Amdi -->
+            <li id="part2" class=""></li>
+            <li id="part3" class=""></li>
+            <li id="part4" class=""></li> <!-- Marius -->
+            <li id="part5" class=""></li>
+            <li id="part6" class=""></li>
+            <li id="part7" class=""></li>
+            <li id="part8" class=""></li>
+            <li id="part9" class=""></li> <!-- OLEG -->
+            <li id="part10" class=""></li>
+            <li id="part11" class=""></li>
+            <li id="part12" class=""></li>
+            <li id="part13" class=""></li>
+            <li id="part14" class=""></li>
+            <li id="part15" class=""></li>
+            <li id="part16" class=""></li>
+            <li id="part17" class=""></li>
+        </ul>
+        <img style="position:relative;z-index:50" src="_img/part/parteneritrans.png" usemap="#tacconsol">
+        <map name="tacconsol" id="tacconsol">
+        <area alt="1" href="http://iwritecode.beget.tech/" target="_blanck" shape="poly" onmouseover="$('#part1').addClass('part1_hover')" onmouseout="$('#part1').removeClass('part1_hover')"   coords="148,88   197,0    295,0    345,88   296,176  197,176 ">
+        <area alt="2" href="#2" shape="poly" onmouseover="$('#part2').addClass('part2_hover')"   onmouseout="$('#part2').removeClass('part2_hover')"   coords="444,88   493,0    591,0    641,88   592,176  493,176 ">
+        <area alt="3" href="#3" shape="poly" onmouseover="$('#part3').addClass('part3_hover')"   onmouseout="$('#part3').removeClass('part3_hover')"   coords="741,88   792,0    889,0    938,88   889,176  790,176" />
+        <area alt="4" href="#4" shape="poly" onmouseover="$('#part4').addClass('part4_hover')"   onmouseout="$('#part4').removeClass('part4_hover')"   coords="0,176    49,88    148,88   197,176  148,264  49,264 ">
+        <area alt="5" href="#5" shape="poly" onmouseover="$('#part5').addClass('part5_hover')"   onmouseout="$('#part5').removeClass('part5_hover')"   coords="296,176  345,88   444,88   493,176  444,264  345,246">
+        <area alt="6" href="#6" shape="poly" onmouseover="$('#part6').addClass('part6_hover')"   onmouseout="$('#part6').removeClass('part6_hover')"   coords="592,176  645,88   740,88   790,176  741,264  642,246" />
+        <area alt="7" href="#7" shape="poly" onmouseover="$('#part7').addClass('part7_hover')"   onmouseout="$('#part7').removeClass('part7_hover')"   coords="148,246  197,176  296,176  345,246  296,352  197,352">
+        <area alt="8" href="#8" shape="poly" onmouseover="$('#part8').addClass('part8_hover')"   onmouseout="$('#part8').removeClass('part8_hover')"   coords="444,246  498,176  596,176  642,246  593,352  494,352" />
+        <area href="http://putintica.beget.tech/" target="_blanck" shape="poly" onmouseover="$('#part9').addClass('part9_hover')"   onmouseout="$('#part9').removeClass('part9_hover')" coords="0,352    49,264   148,264  197,352  147,440  49,440" />
+        <area alt="10" href="#10" shape="poly" onmouseover="$('#part10').addClass('part10_hover')" onmouseout="$('#part10').removeClass('part10_hover')" coords="297,352 345,264  444,264  493,352  445,440  346,440" />
+        <area alt="11" href="#11" shape="poly" onmouseover="$('#part11').addClass('part11_hover')" onmouseout="$('#part11').removeClass('part11_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        <area alt="13" href="#13" shape="poly" onmouseover="$('#part13').addClass('part13_hover')" onmouseout="$('#part13').removeClass('part13_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        <area alt="14" href="#14" shape="poly" onmouseover="$('#part14').addClass('part14_hover')" onmouseout="$('#part14').removeClass('part14_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        <area alt="15" href="#15" shape="poly" onmouseover="$('#part15').addClass('part15_hover')" onmouseout="$('#part15').removeClass('part15_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        <area alt="16" href="#16" shape="poly" onmouseover="$('#part16').addClass('part16_hover')" onmouseout="$('#part16').removeClass('part16_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        <area alt="17" href="#17" shape="poly" onmouseover="$('#part17').addClass('part17_hover')" onmouseout="$('#part17').removeClass('part17_hover')" coords="000,000  000,000  000,000  000,000  000,000  000,000" />
+        </map>
+            <div class="cleaner_hmenu"></div>
+            <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+<div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 pt-5">
+                    2020 @ Toate drepturile furate
+                    <label for="mail"></label><input type="mail" name="mail" placeholder="Abonează-te">
+                    <label for="submit"></label><input type="submit" name="submit" class="footerbtn">
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="fhr"></div>
+                    <article class="certificat mb-5 pt-4"><img src="/_img/certificatcisco.png"class="float-left pr-3"><p><span>CERTIFIED</span><br>Unified Modeling Language Professional 2™</p></article><div class="br10"></div>
+                    <article class="certificat mb-5"><img src="/_img/certificatuml.png"class="float-left pr-3"><p><span>CERTIFIED</span><br>Unified Modeling Language Professional 2™</p></article><div class="br10"></div>
+                    <article class="certificat mb-5"><img src="/_img/certificatibm.png"class="float-left pr-3"><p><span>CERTIFIED</span><br>Unified Modeling Language Professional 2™</p></article>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <div class="fhr"></div>
+                    <div id="social" class="">
+                        <div class="row mt-5">
+                            <div class="col-12 mt-5 d-flex justify-content-center">
+                                <img src="/_img/logo.png">
+                            </div>
+                            <div class="col-12 mb-5 d-flex justify-content-center">
+                                <a href="https://www.facebook.com/" target="_blanck"><i class="fab fa-facebook" style="color: #1975ED"></i></a>
+                                <a href="https://www.instagram.com/" target="_blanck"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/" target="_blanck"><i class="fab fa-twitter" style="color: #1C9DEB"></i></a>
+                                <a href="https://www.youtube.com/" target="_blanck"><i class="fab fa-youtube" style="color: red;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
